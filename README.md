@@ -1,3 +1,2 @@
 # Decoding-Population-Activity-in-V4
-Python implementation for decoding LFP and MUA activity in V4 corresponding to stimuli different spatial positions
-All the analyses are in Analysis.py 
+Python implementation for decoding LFP and MUA activity in V4 corresponding to stimuli different spatial positions. All the analyses are in Analysis.py.
