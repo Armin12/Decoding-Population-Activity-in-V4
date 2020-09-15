@@ -1,6 +1,6 @@
 print(__doc__)
 
-# Author: Armin Najarpour Foroushani -- <armin.najarpour-foroushani@polymtl.ca>
+# Author: Armin Najarpour Foroushani -- <armin.najarpour@gmail.com>
 # Neural analysis
 
 ###################### Import Libraries ##########################
