@@ -111,12 +111,12 @@ def performance_corticaldistance_plotter(cortical_distances_wide, cortical_dista
     plt.axis('tight')
     plt.tight_layout()
     plt.ylim(0.3, 1)
-    plt.ylabel('Performance', fontweight='bold')
-    plt.xlabel('Cortical distance (mm)', fontweight='bold')
+    plt.ylabel('Performance', fontweight='bold', labelpad=30, fontsize=30)
+    plt.xlabel('Cortical distance (mm)', fontweight='bold', labelpad=30, fontsize=30)
     plt.title(figure_title, fontweight='bold', loc='center')
     plt.legend(('Wide', 'Medium', 'Narrow'), loc='lower right', fontsize=32)
     plt.show()
-    fig.savefig(file_name, dpi=200)
+    fig.savefig(file_name, bbox_inches='tight', dpi=200)
 
 
 def Performance_eccentricity_plotter(distance_array_wide, distance_array_medium, distance_array_narrow, ecc_pairs_wide,
@@ -154,14 +154,14 @@ def Performance_eccentricity_plotter(distance_array_wide, distance_array_medium,
     plt.axis('tight')
     plt.tight_layout()
     plt.ylim(0.3, 1)
-    plt.ylabel('Performance', fontweight='bold')
-    plt.xlabel('Eccentricity (deg)', fontweight='bold')
+    plt.ylabel('Performance', fontweight='bold', labelpad=30, fontsize=30)
+    plt.xlabel('Eccentricity (deg)', fontweight='bold', labelpad=30, fontsize=30)
     plt.legend(('Wide p-value={0}'.format(np.round_(p_value_wide, 4)),
                 'Medium p-value={0}'.format(np.round_(p_value_medium, 4)),
                 'Narrow p-value={0}'.format(np.round_(p_value_narrow, 4))), loc='lower right', fontsize=32)
     plt.title(figure_title, fontweight='bold', loc='center')
     plt.show()
-    fig.savefig(file_name, dpi=200)
+    fig.savefig(file_name, dpi=200, bbox_inches='tight')
 
 
 def Performance_eccentricity_plotter_P3(distance_array_wide, distance_array_medium, distance_array_narrow,
@@ -200,11 +200,11 @@ def Performance_eccentricity_plotter_P3(distance_array_wide, distance_array_medi
     plt.axis('tight')
     plt.tight_layout()
     plt.ylim(0.3, 1)
-    plt.ylabel('Performance', fontweight='bold')
-    plt.xlabel('Eccentricity (deg)', fontweight='bold')
+    plt.ylabel('Performance', fontweight='bold', labelpad=30, fontsize=30)
+    plt.xlabel('Eccentricity (deg)', fontweight='bold', labelpad=30, fontsize=30)
     plt.legend(('Wide p-value={0}'.format(np.round_(p_value_wide, 4)),
                 'Medium p-value={0}'.format(np.round_(p_value_medium, 4)),
                 'Narrow p-value={0}'.format(np.round_(p_value_narrow, 4))), loc='lower right', fontsize=32)
     plt.title(figure_title, fontweight='bold', loc='center')
     plt.show()
-    fig.savefig(file_name, dpi=200)
+    fig.savefig(file_name, bbox_inches='tight', dpi=200)
